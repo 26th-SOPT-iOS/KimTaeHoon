@@ -1,14 +1,14 @@
 //
-//  LoginUITests.swift
-//  LoginUITests
+//  fisrtWeekUITests.swift
+//  fisrtWeekUITests
 //
-//  Created by 김태훈 on 2020/04/18.
+//  Created by 김태훈 on 2020/04/20.
 //  Copyright © 2020 김태훈. All rights reserved.
 //
 
 import XCTest
 
-class LoginUITests: XCTestCase {
+class fisrtWeekUITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

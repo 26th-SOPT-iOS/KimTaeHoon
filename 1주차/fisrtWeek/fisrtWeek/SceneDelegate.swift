@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  Login
+//  fisrtWeek
 //
-//  Created by 김태훈 on 2020/04/18.
+//  Created by 김태훈 on 2020/04/20.
 //  Copyright © 2020 김태훈. All rights reserved.
 //
 

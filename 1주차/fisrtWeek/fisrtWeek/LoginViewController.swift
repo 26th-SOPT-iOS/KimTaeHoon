@@ -1,8 +1,8 @@
 //
 //  LoginViewController.swift
-//  Login
+//  fisrtWeek
 //
-//  Created by 김태훈 on 2020/04/18.
+//  Created by 김태훈 on 2020/04/20.
 //  Copyright © 2020 김태훈. All rights reserved.
 //
 
@@ -10,18 +10,25 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var idTextField: UITextField!
-    @IBOutlet weak var pwTextField: UITextField!
+    @IBOutlet weak var myID: UITextField!
+    @IBOutlet weak var myPW: UITextField!
     
-    @IBAction func loginButtonClik(_ sender: Any) {
-    }
-    @IBAction func signInButtonClik(_ sender: Any) {
+    var id: String?
+    var pw: String?
+    
+    private func getLogInData(){
+        guard let id = self.id else{return}
+        guard let pw = self.pw else{return}
         
+        myID.text=id
+        myPW.text=pw
     }
-    
-    
+    @IBAction func logOutButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        getLogInData()
 
         // Do any additional setup after loading the view.
     }
