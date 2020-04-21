@@ -22,6 +22,7 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
         super.viewDidLoad()
         self.registerID.delegate=self
         self.registerPW.delegate=self
+        self.registerPW.isSecureTextEntry=true
         // Do any additional setup after loading the view.
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

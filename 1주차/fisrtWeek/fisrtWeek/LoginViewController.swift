@@ -10,8 +10,8 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
-    @IBOutlet weak var myID: UITextField!
-    @IBOutlet weak var myPW: UITextField!
+    @IBOutlet weak var myID: UILabel!
+    @IBOutlet weak var myPW: UILabel!
     
     var id: String?
     var pw: String?
@@ -25,6 +25,7 @@ class LoginViewController: UIViewController {
     }
     @IBAction func logOutButton(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()

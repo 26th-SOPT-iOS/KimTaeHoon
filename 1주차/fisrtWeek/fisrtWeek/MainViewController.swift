@@ -14,10 +14,12 @@ class MainViewController: UIViewController ,UITextFieldDelegate{
     @IBOutlet weak var getPW: UITextField!
     
     @IBAction func loginButtonClik(_ sender: Any) {
+        
         guard let receiveViewController = self.storyboard?.instantiateViewController(identifier: "LoginViewController", creator: nil) as? LoginViewController else {return}
         receiveViewController.id=getID.text
         receiveViewController.pw=getPW.text
         self.present(receiveViewController,animated: true, completion: nil)
+        self.getID.clearsOnBeginEditing=true
     }
     @IBAction func signInButtonClick(_ sender: Any) {
         guard let pushToNext = self.storyboard?.instantiateViewController(withIdentifier: "RegisterViewController") else {
@@ -29,6 +31,7 @@ class MainViewController: UIViewController ,UITextFieldDelegate{
         super.viewDidLoad()
         self.getID.delegate = self
         self.getPW.delegate = self
+        self.getPW.isSecureTextEntry=true
         // Do any additional setup after loading the view.
     }
     
