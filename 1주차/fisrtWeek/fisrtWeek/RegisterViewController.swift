@@ -16,7 +16,9 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
         guard let receiveViewController = self.storyboard?.instantiateViewController(identifier: "LoginViewController", creator: nil) as? LoginViewController else {return}
         receiveViewController.id=registerID.text
         receiveViewController.pw=registerPW.text
-        self.present(receiveViewController,animated: true, completion: nil)
+        self.present(receiveViewController,animated: true){
+            self.navigationController?.popViewController(animated: false)
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
