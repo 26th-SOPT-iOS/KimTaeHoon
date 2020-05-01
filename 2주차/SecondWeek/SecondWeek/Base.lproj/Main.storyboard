@@ -18,7 +18,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soptLogo" translatesAutoresizingMaskIntoConstraints="NO" id="5HW-ev-BwW">
                                 <rect key="frame" x="86" y="150" width="242" height="68"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mm0-5k-iJe">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mm0-5k-iJe">
                                 <rect key="frame" x="39" y="276" width="338" height="44"/>
                                 <color key="backgroundColor" red="0.92941802740000001" green="0.92940050360000004" blue="0.92941242459999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -27,7 +27,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jWQ-VB-EKo">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jWQ-VB-EKo">
                                 <rect key="frame" x="39" y="338" width="338" height="44"/>
                                 <color key="backgroundColor" red="0.92941802740000001" green="0.92940050360000004" blue="0.92941242459999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -124,7 +124,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="soptLogo" translatesAutoresizingMaskIntoConstraints="NO" id="A46-VP-gE2">
                                 <rect key="frame" x="121" y="143" width="172" height="68"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iz3-Qx-cHb">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iz3-Qx-cHb">
                                 <rect key="frame" x="38" y="300" width="338" height="44"/>
                                 <color key="backgroundColor" red="0.92941802740000001" green="0.92940050360000004" blue="0.92941242459999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -133,7 +133,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ra-0w-w8m">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ra-0w-w8m">
                                 <rect key="frame" x="38" y="359" width="338" height="44"/>
                                 <color key="backgroundColor" red="0.92941802740000001" green="0.92940050360000004" blue="0.92941242459999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -165,7 +165,7 @@
                                 <color key="textColor" red="0.099089480940000002" green="0.22825843100000001" blue="0.61572051049999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ITu-QD-s37">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ITu-QD-s37">
                                 <rect key="frame" x="38" y="418" width="338" height="44"/>
                                 <color key="backgroundColor" red="0.92941802740000001" green="0.92940050360000004" blue="0.92941242459999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -186,6 +186,23 @@
                                     <action selector="goToLogin:" destination="5LB-Ks-FZQ" eventType="touchUpInside" id="gZw-oj-wZa"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0C0-f6-9HY">
+                                <rect key="frame" x="301" y="370" width="62" height="22"/>
+                                <state key="normal" image="idcheckGreenIc">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkEmail:" destination="grD-KK-LWJ" eventType="touchUpInside" id="lxb-GI-mvo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ZP-nI-NAo">
+                                <rect key="frame" x="103" y="736" width="208" height="19"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -195,13 +212,17 @@
                             <constraint firstItem="A46-VP-gE2" firstAttribute="top" secondItem="GsC-rF-PKo" secondAttribute="top" constant="99" id="9b4-ES-bes"/>
                             <constraint firstItem="GsC-rF-PKo" firstAttribute="trailing" secondItem="ITu-QD-s37" secondAttribute="trailing" constant="38" id="CmR-8D-917"/>
                             <constraint firstItem="iz3-Qx-cHb" firstAttribute="top" secondItem="go5-qr-cAN" secondAttribute="bottom" constant="42" id="DRu-iD-nJE"/>
+                            <constraint firstItem="1ZP-nI-NAo" firstAttribute="top" secondItem="HhZ-ea-4eO" secondAttribute="bottom" constant="181" id="Dbp-Ze-mmA"/>
                             <constraint firstItem="GsC-rF-PKo" firstAttribute="trailing" secondItem="HhZ-ea-4eO" secondAttribute="trailing" constant="38" id="Hod-Lx-8dy"/>
                             <constraint firstItem="HhZ-ea-4eO" firstAttribute="top" secondItem="ITu-QD-s37" secondAttribute="bottom" constant="45" id="P1W-zA-Fig"/>
                             <constraint firstItem="ITu-QD-s37" firstAttribute="top" secondItem="2ra-0w-w8m" secondAttribute="bottom" constant="15" id="WEl-wg-7fD"/>
                             <constraint firstItem="go5-qr-cAN" firstAttribute="top" secondItem="A46-VP-gE2" secondAttribute="bottom" constant="10" id="WtS-IN-G9b"/>
                             <constraint firstItem="2ra-0w-w8m" firstAttribute="top" secondItem="iz3-Qx-cHb" secondAttribute="bottom" constant="15" id="XvB-se-qBg"/>
+                            <constraint firstItem="0C0-f6-9HY" firstAttribute="leading" secondItem="GsC-rF-PKo" secondAttribute="leading" constant="301" id="XwM-MS-h7d"/>
+                            <constraint firstItem="GsC-rF-PKo" firstAttribute="trailing" secondItem="0C0-f6-9HY" secondAttribute="trailing" constant="51" id="cUW-Bm-3uT"/>
                             <constraint firstItem="GsC-rF-PKo" firstAttribute="trailing" secondItem="iz3-Qx-cHb" secondAttribute="trailing" constant="38" id="dpt-1X-O5X"/>
                             <constraint firstItem="HhZ-ea-4eO" firstAttribute="leading" secondItem="GsC-rF-PKo" secondAttribute="leading" constant="38" id="g6F-Lt-aHe"/>
+                            <constraint firstItem="1ZP-nI-NAo" firstAttribute="leading" secondItem="GsC-rF-PKo" secondAttribute="leading" constant="103" id="gb1-79-dZT"/>
                             <constraint firstItem="ITu-QD-s37" firstAttribute="leading" secondItem="GsC-rF-PKo" secondAttribute="leading" constant="38" id="izp-Kv-1fo"/>
                             <constraint firstItem="go5-qr-cAN" firstAttribute="leading" secondItem="GsC-rF-PKo" secondAttribute="leading" constant="146" id="j1I-Gc-0e6"/>
                             <constraint firstItem="7Qx-Gp-XoR" firstAttribute="top" secondItem="GsC-rF-PKo" secondAttribute="top" constant="11" id="k6U-M4-YZ3"/>
@@ -209,11 +230,14 @@
                             <constraint firstItem="2ra-0w-w8m" firstAttribute="leading" secondItem="GsC-rF-PKo" secondAttribute="leading" constant="38" id="ngn-u2-UNz"/>
                             <constraint firstItem="A46-VP-gE2" firstAttribute="leading" secondItem="GsC-rF-PKo" secondAttribute="leading" constant="121" id="p3d-fK-EDP"/>
                             <constraint firstItem="GsC-rF-PKo" firstAttribute="trailing" secondItem="go5-qr-cAN" secondAttribute="trailing" constant="145" id="pXd-0F-sMV"/>
+                            <constraint firstItem="GsC-rF-PKo" firstAttribute="trailing" secondItem="1ZP-nI-NAo" secondAttribute="trailing" constant="103" id="xhI-GJ-qg9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GsC-rF-PKo"/>
                     </view>
                     <connections>
                         <outlet property="RegisterButton" destination="HhZ-ea-4eO" id="ehM-qY-Frw"/>
+                        <outlet property="checkbutoon" destination="0C0-f6-9HY" id="PCA-zV-95F"/>
+                        <outlet property="giveInfo" destination="1ZP-nI-NAo" id="6uY-F3-6cF"/>
                         <outlet property="registerEmail" destination="2ra-0w-w8m" id="ONh-7X-S27"/>
                         <outlet property="registerName" destination="iz3-Qx-cHb" id="JHA-5Y-Rq6"/>
                         <outlet property="registerPW" destination="ITu-QD-s37" id="aYd-gr-nXz"/>
@@ -391,6 +415,7 @@
         <image name="9235840225230627344610312982063520952090624N" width="148" height="198"/>
         <image name="9298934625230618844611168856475911587889152N" width="148" height="198"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="idcheckGreenIc" width="22" height="22"/>
         <image name="oursoptBgImg" width="375" height="210"/>
         <image name="soptLogo" width="203" height="68"/>
     </resources>
