@@ -18,13 +18,13 @@ class ViewController: UIViewController, UITextFieldDelegate{
             return
         }
         self.navigationController?.pushViewController(navigationpush, animated: true)
-        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+
     }
     func layout(){
         self.button.layer.cornerRadius=24
         self.getEmail.placeholder="이메일"
         self.getPW.placeholder="비밀번호"
-        self.getEmail.layer.cornerRadius=22
+        self.getEmail.layer.cornerRadius=getEmail.frame.height/2
         self.getPW.layer.cornerRadius=22
         self.getEmail.delegate = self
         self.getPW.delegate = self
@@ -36,12 +36,11 @@ class ViewController: UIViewController, UITextFieldDelegate{
             return
         }
         self.navigationController?.pushViewController(gotoRegister, animated: true)
-        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
     }
     override func viewDidLoad() {
         self.layout()
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

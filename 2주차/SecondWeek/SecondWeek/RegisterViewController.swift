@@ -28,12 +28,13 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
         self.navigationController?.popViewController(animated: true)
     }
     func layout(){
-        self.RegisterButton.layer.cornerRadius=24
+        RegisterButton.layer.cornerRadius=24
         self.registerName.placeholder="이름"
         self.registerEmail.placeholder="이메일"
         self.registerPW.placeholder="비밀번호"
-        self.registerEmail.layer.cornerRadius = 220
-        self.registerPW.layer.cornerRadius=220
+        registerEmail.layer.cornerRadius = 22
+        registerPW.layer.cornerRadius=22
+        registerName.layer.cornerRadius=22
         self.registerEmail.delegate = self
         self.registerPW.delegate = self
         self.registerPW.isSecureTextEntry=true

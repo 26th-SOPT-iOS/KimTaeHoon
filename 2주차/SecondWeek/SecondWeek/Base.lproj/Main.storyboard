@@ -231,7 +231,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oursoptBgImg" translatesAutoresizingMaskIntoConstraints="NO" id="nJp-NT-soC">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="oursoptBgImg" translatesAutoresizingMaskIntoConstraints="NO" id="nJp-NT-soC">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="210"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="210" id="Xcj-lq-EgD"/>
@@ -353,6 +353,7 @@
                     </view>
                     <size key="freeformSize" width="414" height="1200"/>
                     <connections>
+                        <outlet property="imageheignt" destination="Xcj-lq-EgD" id="lqV-RF-tHA"/>
                         <outlet property="mainImg" destination="nJp-NT-soC" id="gBC-IY-GA4"/>
                         <outlet property="scroll" destination="78b-lm-xet" id="dgI-vT-str"/>
                     </connections>

@@ -20,8 +20,14 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
         self.scroll.delegate = self
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         // Do any additional setup after loading the view.
-    }
+    }    
+    @IBOutlet weak var imageheignt: NSLayoutConstraint!
+    let scrollAmount:CGFloat = 210
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let y = self.scroll.contentOffset.y
+        if y < 105 && y > -105{
+            imageheignt.constant = scrollAmount-y
+        }
     }
     /*
     // MARK: - Navigation
