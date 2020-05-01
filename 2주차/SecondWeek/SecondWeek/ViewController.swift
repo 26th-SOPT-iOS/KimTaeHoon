@@ -18,6 +18,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
             return
         }
         self.navigationController?.pushViewController(navigationpush, animated: true)
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
     }
     func layout(){
         self.button.layer.cornerRadius=24
@@ -35,6 +36,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
             return
         }
         self.navigationController?.pushViewController(gotoRegister, animated: true)
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
     }
     override func viewDidLoad() {
         self.layout()

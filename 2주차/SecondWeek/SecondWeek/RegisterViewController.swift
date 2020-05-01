@@ -16,11 +16,16 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
     let mail = "st939823@gmail.com"
     @IBOutlet weak var RegisterButton: UIButton!
     @IBAction func registerButtonClick(_ sender: Any) {
+        var message = "사용 가능한 이메일입니다."
         if (self.registerEmail.isEqual(self.mail)){
-            
+            message = "중복된 이메일입니다."
         }
         else{self.navigationController?.popViewController(animated: true)
         }
+        
+    }
+    @IBAction func goBacktoLogin(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     func layout(){
         self.RegisterButton.layer.cornerRadius=24
@@ -36,6 +41,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
     override func viewDidLoad() {
 
         self.layout()
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

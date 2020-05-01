@@ -8,18 +8,21 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UIScrollViewDelegate {
 
+    @IBOutlet weak var mainImg: UIImageView!
+    @IBOutlet weak var scroll: UIScrollView!
     @IBAction func goToLogin(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.scroll.delegate = self
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         // Do any additional setup after loading the view.
     }
-    
-
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    }
     /*
     // MARK: - Navigation
 
