@@ -22,12 +22,10 @@ class ViewController: UIViewController, UITextFieldDelegate{
     }
     func layout(){
         self.button.layer.cornerRadius=24
-        self.getEmail.placeholder="  이메일"
-        self.getPW.placeholder="  비밀번호"
+        self.getEmail.placeholder="이메일"
+        self.getPW.placeholder="비밀번호"
         self.getEmail.layer.cornerRadius=22
         self.getPW.layer.cornerRadius=22
-        self.getEmail.layer.masksToBounds=true
-        self.getPW.layer.masksToBounds=true
         self.getEmail.delegate = self
         self.getPW.delegate = self
         self.getPW.isSecureTextEntry=true

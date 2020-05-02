@@ -28,6 +28,9 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
             message = "사용 가능한 이메일입니다."
         }
         giveInfo.text = message
+        giveInfo.alpha = 1
+        UIView.animate(withDuration: 1, animations: ({self.giveInfo.alpha = 0}))
+        
     }
     
     @IBAction func registerButtonClick(_ sender: Any) {
@@ -43,21 +46,19 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
         let redius:CGFloat = 22.0
         RegisterButton.layer.cornerRadius=24
         self.giveInfo.layer.cornerRadius=redius
-        self.registerName.placeholder="  이름"
-        self.registerEmail.placeholder="  이메일"
-        self.registerPW.placeholder="  비밀번호"
+        self.registerName.placeholder="이름"
+        self.registerEmail.placeholder="이메일"
+        self.registerPW.placeholder="비밀번호"
         registerEmail.layer.cornerRadius = redius
         registerPW.layer.cornerRadius=redius
         registerName.layer.cornerRadius=redius
-        self.registerName.layer.masksToBounds=true
         self.registerEmail.delegate = self
         self.registerPW.delegate = self
-        self.registerEmail.layer.masksToBounds=true
-        self.registerPW.layer.masksToBounds=true
         self.registerPW.isSecureTextEntry=true
+
     }
     override func viewDidLoad() {
-
+        giveInfo.alpha = 0
         self.layout()
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         super.viewDidLoad()
