@@ -24,17 +24,16 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var imgTrailing: NSLayoutConstraint!
     @IBOutlet weak var imageheignt: NSLayoutConstraint!
     @IBOutlet weak var imgLeading: NSLayoutConstraint!
-    let scrollAmount:CGFloat = 210
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let y = self.scroll.contentOffset.y
-        if y < 105 && y > 0{
-            imageheignt.constant = scrollAmount-y
+        if y < 100 && y>0 {
+            imageheignt.constant = 210-y
+            //scrollTopConstraint.constant = 210 - y
         }
-        else if y<0 && y > -105 {
-            imageheignt.constant = scrollAmount - y
-            imgLeading.constant = y
-            imgTrailing.constant = -y
+        else if y<0 && y > -100{
+            imageheignt.constant = 210 - y
         }
+        print(y)
     }
     /*
     // MARK: - Navigation

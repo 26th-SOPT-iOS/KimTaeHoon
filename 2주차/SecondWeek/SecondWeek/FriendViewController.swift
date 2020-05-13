@@ -79,8 +79,7 @@ extension FriendViewController:UITableViewDataSource{
         if editingStyle == .delete{
             FriendInfo.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
-            myFriendNumber.text="친구 "+String(FriendInfo.count)        }
-        else if editingStyle == .insert{
+            myFriendNumber.text="친구 "+String(FriendInfo.count)
         }
     }
     
