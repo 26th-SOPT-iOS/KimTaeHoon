@@ -726,7 +726,7 @@
         <scene sceneID="Qti-Lv-QnT">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="f5q-JF-qhl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" landscapeImage="homeUnselectedIc" largeContentSizeImage="homeUnselectedIc" id="tl5-5h-xa7"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="house" catalog="system" id="tl5-5h-xa7"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TJC-Oj-o4M">
                         <autoresizingMask key="autoresizingMask"/>
@@ -765,6 +765,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="oCa-Fb-YNa"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2ef-OX-jqR">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -788,7 +789,6 @@
         <image name="9298934625230618844611168856475911587889152N" width="148" height="198"/>
         <image name="9573886432601742940168682793295078318145536N" width="59" height="60"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
-        <image name="homeUnselectedIc" width="24" height="24"/>
         <image name="house" catalog="system" width="128" height="110"/>
         <image name="idcheckGreenIc" width="22" height="22"/>
         <image name="oursoptBgImg" width="375" height="210"/>

@@ -41,9 +41,9 @@
 
 /* Begin PBXFileReference section */
 		DA82A37924543062002A2533 /* SecondWeek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondWeek.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA82A37C24543062002A2533 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA82A37E24543062002A2533 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA82A38024543062002A2533 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DA82A37C24543062002A2533 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		DA82A37E24543062002A2533 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = ../SceneDelegate.swift; sourceTree = "<group>"; };
+		DA82A38024543062002A2533 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../ViewController.swift; sourceTree = "<group>"; };
 		DA82A38324543062002A2533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA82A38524543065002A2533 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA82A38824543065002A2533 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,11 +54,11 @@
 		DA82A39A24543065002A2533 /* SecondWeekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondWeekUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA82A39E24543065002A2533 /* SecondWeekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondWeekUITests.swift; sourceTree = "<group>"; };
 		DA82A3A024543065002A2533 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DA82A3AC2457DC0E002A2533 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		DA82A3AE2457DC1C002A2533 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		DAF6DE26246A789300849FD4 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
-		DAF6DE28246A7CDA00849FD4 /* friendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = friendTableViewCell.swift; sourceTree = "<group>"; };
-		DAF6DE2A246A7DA900849FD4 /* FriendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendList.swift; sourceTree = "<group>"; };
+		DA82A3AC2457DC0E002A2533 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ../../RegisterViewController.swift; sourceTree = "<group>"; };
+		DA82A3AE2457DC1C002A2533 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../../MainViewController.swift; sourceTree = "<group>"; };
+		DAF6DE26246A789300849FD4 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FriendViewController.swift; path = ../../FriendViewController.swift; sourceTree = "<group>"; };
+		DAF6DE28246A7CDA00849FD4 /* friendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = friendTableViewCell.swift; path = ../../friendTableViewCell.swift; sourceTree = "<group>"; };
+		DAF6DE2A246A7DA900849FD4 /* FriendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FriendList.swift; path = ../../FriendList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +86,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA020532246FAD2300567905 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DA82A38524543065002A2533 /* Assets.xcassets */,
+				DA020533246FAD3200567905 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DA020533246FAD3200567905 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DA82A38224543062002A2533 /* Main.storyboard */,
+				DA82A38724543065002A2533 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DA020534246FAD3E00567905 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				DA82A37C24543062002A2533 /* AppDelegate.swift */,
+				DA82A37E24543062002A2533 /* SceneDelegate.swift */,
+				DA020535246FAD4600567905 /* ViewControllers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DA020535246FAD4600567905 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAF6DE2A246A7DA900849FD4 /* FriendList.swift */,
+				DA82A38024543062002A2533 /* ViewController.swift */,
+				DA82A3AC2457DC0E002A2533 /* RegisterViewController.swift */,
+				DA82A3AE2457DC1C002A2533 /* MainViewController.swift */,
+				DAF6DE28246A7CDA00849FD4 /* friendTableViewCell.swift */,
+				DAF6DE26246A789300849FD4 /* FriendViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		DA82A37024543062002A2533 = {
 			isa = PBXGroup;
 			children = (
@@ -109,17 +150,8 @@
 		DA82A37B24543062002A2533 /* SecondWeek */ = {
 			isa = PBXGroup;
 			children = (
-				DAF6DE2A246A7DA900849FD4 /* FriendList.swift */,
-				DA82A37C24543062002A2533 /* AppDelegate.swift */,
-				DA82A37E24543062002A2533 /* SceneDelegate.swift */,
-				DA82A38024543062002A2533 /* ViewController.swift */,
-				DA82A3AC2457DC0E002A2533 /* RegisterViewController.swift */,
-				DA82A3AE2457DC1C002A2533 /* MainViewController.swift */,
-				DA82A38224543062002A2533 /* Main.storyboard */,
-				DAF6DE28246A7CDA00849FD4 /* friendTableViewCell.swift */,
-				DAF6DE26246A789300849FD4 /* FriendViewController.swift */,
-				DA82A38524543065002A2533 /* Assets.xcassets */,
-				DA82A38724543065002A2533 /* LaunchScreen.storyboard */,
+				DA020532246FAD2300567905 /* Resources */,
+				DA020534246FAD3E00567905 /* Sources */,
 				DA82A38A24543065002A2533 /* Info.plist */,
 			);
 			path = SecondWeek;
