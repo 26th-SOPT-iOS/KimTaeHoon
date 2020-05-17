@@ -18,7 +18,6 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
     
     
     
-    let mail = "st939823@gmail.com"
     @IBOutlet weak var RegisterButton: UIButton!
     
     @IBAction func registerButtonClick(_ sender: Any) {
@@ -62,7 +61,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate{
         
     }
     @IBAction func goBacktoLogin(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     func layout(){
         let redius:CGFloat = 22.0

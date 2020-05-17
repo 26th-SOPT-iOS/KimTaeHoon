@@ -12,14 +12,21 @@ class ViewController: UIViewController, UITextFieldDelegate{
     var id:String?
     var pw:String?
     var toggle = false
+    private var isbuttonselected=false
     @IBOutlet weak var getEmail: UITextField!
     @IBOutlet weak var getPW: UITextField!
     
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var AutoLogin: UIButton!
     @IBAction func AutoLoginClick(_ sender: UIButton) {
-        self.AutoLogin.setImage(UIImage(systemName: "circle"), for: UIControl.State.normal)
-        self.AutoLogin.setImage(UIImage(systemName: "checkmark.circle"), for: UIControl.State.selected)
+        self.isbuttonselected = !self.isbuttonselected
+        if (isbuttonselected){
+            self.AutoLogin.setImage(UIImage(named: "check_selected"), for: UIControl.State.normal)
+        }
+        else {
+            self.AutoLogin.setImage(UIImage(named: "check_default"), for: UIControl.State.normal)
+
+        }
     }
     
     @IBAction func logInButtonClick(_ sender: Any) {
@@ -37,17 +44,23 @@ class ViewController: UIViewController, UITextFieldDelegate{
     }
     @IBOutlet weak var goRegister: UILabel!
     @IBAction func registerButtonClick(_ sender: Any) {
-        guard let gotoRegister = self.storyboard?.instantiateViewController(withIdentifier: "registerView") else {
-            return
-        }
-        self.navigationController?.pushViewController(gotoRegister, animated: true)
+        guard let gotoRegister = self.storyboard?.instantiateViewController(identifier: "registerView") as? RegisterViewController else {return}
+        gotoRegister.modalPresentationStyle = .fullScreen
+        self.present(gotoRegister, animated: true, completion: nil)
     }
     override func viewDidLoad() {
         self.layout()
 
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         getLogInData()
-        //guard let userID = UserDefaults.standard.string(forKey: "id")
+        if let userID = UserDefaults.standard.string(forKey: "id") {
+            if let UserPW = UserDefaults.standard.string(forKey: "pw"){
+                guard let tabberController = self.storyboard?.instantiateViewController(identifier: "tabbarVC") as? tabbarController else {return}
+                tabberController.modalPresentationStyle = .fullScreen
+                self.present(tabberController, animated: true, completion: nil)
+            }
+        }else {return}
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
@@ -72,10 +85,13 @@ class ViewController: UIViewController, UITextFieldDelegate{
     private func login(){
         guard let inputID = getEmail.text else {return}
         guard let inputPW = getPW.text else {return}
-        if (self.AutoLogin.isSelected){
+        print(isbuttonselected)
+        if (isbuttonselected){
             print("자동로그인")
-            //UserDefaults.standard.set(self.getEmail,forKey: "id")
-            //UserDefaults.standard.set(self.getPW,forKey: "pw")
+            UserDefaults.standard.removeObject(forKey: "id")
+            UserDefaults.standard.removeObject(forKey: "pw")
+            UserDefaults.standard.set(self.getEmail.text,forKey: "id")
+            UserDefaults.standard.set(self.getPW.text,forKey: "pw")
         }
         LoginService.shared.login(id: inputID, pwd: inputPW){ networkREsult in
             switch networkREsult{
@@ -91,6 +107,8 @@ class ViewController: UIViewController, UITextFieldDelegate{
                 let action = UIAlertAction(title: "확인", style: .cancel, handler: nil)
                 alertViewController.addAction(action)
                 self.present(alertViewController, animated: true, completion: nil)
+                UserDefaults.standard.removeObject(forKey: "id")
+                UserDefaults.standard.removeObject(forKey: "pw")
             case .pathErr : print("path")
             case .serverErr: print("serverErr")
             case .networkFail: print("networkFail")

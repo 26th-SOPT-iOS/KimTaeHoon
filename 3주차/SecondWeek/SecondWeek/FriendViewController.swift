@@ -20,6 +20,11 @@ class FriendViewController: UIViewController {
         setting.addAction(UIAlertAction(title: "전체 설정", style: .default , handler:{ (UIAlertAction)in
             print("전체 설정 클릭")
         }))
+        setting.addAction(UIAlertAction(title: "로그아웃", style: .default , handler:{ (UIAlertAction)in
+            UserDefaults.standard.removeObject(forKey: "id")
+            UserDefaults.standard.removeObject(forKey: "pw")
+            self.dismiss(animated: true, completion: nil)
+        }))
         setting.addAction(UIAlertAction(title: "취소", style:.cancel, handler: {(UIAlertAction)in print("취소")}))
         self.present(setting, animated: true, completion: {
             print("completion block")
